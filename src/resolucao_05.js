@@ -9,8 +9,19 @@ const inventory = [
 ];
 
 // Resolucao letra E
-// Verificar se todos os produtos têm pelo menos uma avaliação (review)
+// Verificar se todos os produtos têm pelo menos uma avaliação (review);
 
 const verifyAllReviews = inventory.every(e => e.reviews.length > 0);
 console.log(verifyAllReviews)
 
+//Resolucao letra F
+// f. Encontrar o índice do produto "Cafeteira";
+
+const index = inventory.findIndex(e => e.name == "Cafeteira");
+console.log(index);
+
+// Resolucao letra G
+//g. Encontrar o primeiro produto da categoria "Vestuário";
+
+const vestuarios = inventory.filter(e => e.category == "Vestuário");
+console.log(vestuarios[0])
