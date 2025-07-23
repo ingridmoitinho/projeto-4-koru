@@ -24,4 +24,12 @@ console.log(index);
 //g. Encontrar o primeiro produto da categoria "Vestuário";
 
 const vestuarios = inventory.filter(e => e.category == "Vestuário");
-console.log(vestuarios[0])
+console.log(vestuarios[0]);
+
+// Resolucao letra H
+// Criar uma função de busca que retorna produtos cujo nome contenha um termo específico
+
+const buscaProduto = (produto) => {
+    return inventory.filter(e => e.name.toLowerCase().includes(produto.toLowerCase()));
+}
+console.log(buscaProduto("cal"));
